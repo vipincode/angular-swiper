@@ -1,0 +1,53 @@
+
+<h1>Product Carousel</h1>
+
+<div>
+  <swiper
+    [cssMode]="true"
+    [navigation]="true"
+    [mousewheel]="true"
+    [keyboard]="true"
+    [slidesPerView]="3"
+    [spaceBetween]="30"
+    [autoplay]="{
+      delay: 2500,
+      disableOnInteraction: false
+    }"
+    [pagination]="{
+      clickable: true
+    }"
+    [breakpoints]="{
+      '@0.00': {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      '@0.75': {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      '@1.00': {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      '@1.50': {
+        slidesPerView: 3,
+        spaceBetween: 50
+      },
+      '@1.80': {
+        slidesPerView: 4,
+        spaceBetween: 50
+      }
+    }"
+    class="mySwiper"
+  >
+    <ng-template swiperSlide><h2 style="color: #fff;">Slide 1</h2></ng-template
+    ><ng-template swiperSlide><h2 style="color: #fff;">Slide 2</h2></ng-template
+    ><ng-template swiperSlide><h2 style="color: #fff;">Slide 3</h2></ng-template
+    ><ng-template swiperSlide><h2 style="color: #fff;">Slide 4</h2></ng-template
+    ><ng-template swiperSlide><h2 style="color: #fff;">Slide 5</h2></ng-template
+    ><ng-template swiperSlide><h2 style="color: #fff;">Slide 6</h2></ng-template
+    ><ng-template swiperSlide><h2 style="color: #fff;">Slide 7</h2></ng-template
+    ><ng-template swiperSlide><h2 style="color: #fff;">Slide 8</h2></ng-template
+    ><ng-template swiperSlide><h2 style="color: #fff;">Slide 9</h2></ng-template>
+  </swiper>
+</div>

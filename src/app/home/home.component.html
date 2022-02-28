@@ -1,0 +1,14 @@
+<h1>Home Carousel</h1>
+<div>
+    <swiper #swiper [virtual]="true" effect="flip" class="homeSwiper">
+        <ng-template swiperSlide><h2>Slide 1</h2></ng-template>
+        <ng-template swiperSlide><h2>Slide 2</h2></ng-template>
+        <ng-template swiperSlide><h2>Slide 3</h2></ng-template>
+        <ng-template swiperSlide><h2>Slide 4</h2></ng-template>
+        <ng-template swiperSlide><h2>Slide 5</h2></ng-template>
+        <ng-template swiperSlide><h2>Slide 6</h2></ng-template>
+        <ng-template swiperSlide><h2>Slide 7</h2></ng-template>
+      </swiper>
+      <button (click)="slideNext()">Next slide</button>
+      <button (click)="slidePrev()">Prev slide</button>
+</div>
